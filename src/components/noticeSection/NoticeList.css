@@ -1,0 +1,25 @@
+@media screen and (min-width:991px){
+    .new-list{
+        margin-left: 4rem;
+    }
+   
+}
+.left2{
+    width: 10%;
+}
+.right2{
+    width: 95% ;
+}
+.notice-banner{
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* soft peach to warm orange */
+color: #333; /* dark text for readability */
+
+}
+.notice-banner p{
+    font-size: 2rem;
+}

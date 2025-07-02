@@ -1,0 +1,45 @@
+.accordion-button::after {
+    display: none !important; /* Remove default Bootstrap chevron */
+  }
+
+
+  .accordion-button::before {
+    content: '+'; /* Default symbol */
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+  }
+.accordion{
+    width: 99%;
+    margin: auto;
+}
+  .accordion-button:not(.collapsed)::before {
+    content: '-'; /* When open */
+  }
+  .accordion .accordion-button{
+    background-color: #bcced2;
+    box-shadow: none;
+  }
+  #facultyAccordion{
+width: 85vw;
+margin: auto;
+margin-bottom: 3rem;
+margin-top:  3rem;
+}
+
+.teacher-name{
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.teacher-details{
+  color: #545454;
+  font-size: 11.5px;
+  font-family:  sans-serif;
+}
+
+.department-name{
+  color: purple;
+  font-weight: bold;
+}

@@ -1,0 +1,54 @@
+  body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .princpal-desk-heading{
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .princpal-desk-heading h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+        .princpal-desk-heading h2 {
+            font-size: 1.3em;
+            margin: 5px 0 0;
+        }
+        .principal-desk-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .principal-desk-card {
+            background-color: #fff;
+            border-radius: 12px;
+            margin: 15px;
+            padding: 25px;
+            max-width: 600px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+        .principal-desk-card h3 {
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+        .principal-desk-card p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .principal-img {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .principal-img img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+   

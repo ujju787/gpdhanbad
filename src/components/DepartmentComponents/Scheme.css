@@ -1,0 +1,48 @@
+.scheme-btn .btn{
+ background-color: #00062b;
+    color: white;
+}
+.scheme-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* src/components/Scheme.css */
+
+/* Ensure the modal and backdrop sit above everything */
+.modal-backdrop {
+  z-index: 1040;
+}
+.modal {
+  z-index: 1050;
+}
+
+/* Optional: make iframe fill nicely */
+.modal-body iframe {
+  display: block;
+}
+.scheme-container h2{
+      font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.scheme-container h2::after{
+      content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #5f27cd);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: slideIn 1s ease forwards;
+}

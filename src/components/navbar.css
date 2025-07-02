@@ -1,0 +1,254 @@
+/* code for the header space icon and .vertical-nav-icon arrangement  */
+.vertical-nav-icon {
+    margin-left: -0.8rem;
+    padding-bottom: 6px;
+}
+
+nav{
+    position: relative;
+    background-color:#4B0082;
+  /* background-color:#00062b; */
+
+}
+/* Logo and Text Container */
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add space between the logo and text */
+  }
+  .logo{
+    margin-right: -16px;
+  }
+  .college-name {
+    font-weight: bold;
+    color: #FFD700; /* Gold color to contrast well with indigo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Adding shadow for depth */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  .college-name:hover {
+    color: #FF6347; /* Tomato color on hover to make it interactive */
+  }
+  /* Styling for the Established Text */
+  .established {
+    font-size: 1rem; /* Smaller size for 'Established' text */
+    color: #f4a261; /* Light color for contrast */
+    font-style: italic; /* Make it italic */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .established:hover {
+    color: #2e8b57; /* Change color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+ .navbar-brand{
+    margin-right: -1.1rem;
+}
+.navbar-collapse{
+    width: 78%;
+}
+.nav-item{
+    font-size: 1rem;
+}
+.dropdown-item:hover{
+    background-color: #4B0082;
+    color: white;
+}
+ nav ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar-brand img{
+    border-radius: 50%;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-brand{
+    position: relative;
+    right: 30px;
+}
+.navbar-toggler{
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 0px;
+    height: 47px;
+    padding: 8px auto;
+    font-size: 18px;
+}
+.dropdown-menu{
+    border: none;
+}
+    .college-logo{
+        width:  90px;
+        height: 90px;
+    }
+    .vertical-nav-icon{
+        display: block;
+        align-self: flex-start;
+    }
+.nav-link{
+    padding: 1rem;
+}
+    /* This container handles alignment of top three social icons in vertical nav */
+ .container{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 6px 0px;
+}
+.dropdown-item{
+    display:flex ;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.5rem;
+}
+/* this icon class decorates top three social media icons for large screen */
+.icon{
+    margin-left: 1.9rem;
+color: rgb(64, 159, 64);    
+opacity: 0.8;
+}
+
+
+  /* Navbar Dropdown */
+  .navbar .dropdown-menu {
+   background-color: white;/* Semi-transparent white, adjust as needed */
+    z-index: 10; /* Ensure it is on top */
+  }
+  /* Sign Up Button Styling */
+.button-btn {
+    background-color: #FFD700; 
+    color: #4B0082; 
+    padding: 10px 25px; 
+    font-size: 0.7rem;
+    font-weight: bold; 
+    border: none;
+    border-radius: 30px; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    white-space: nowrap; 
+    display: inline-block; 
+  }
+  .button-container{
+    display: flex;
+    gap: 9px;
+
+  }
+  /* Hover Effect */
+  .button-btn:hover {
+    background-color: #FF6347; 
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+
+  }
+@media screen and (max-width:991px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+}
+
+  
+ 
+  @media (min-width: 554px) and (max-width:991px) {
+.navbar-brand{
+    margin-left: 3rem;
+    margin-top: 9px;
+}
+
+.button-btn{
+    width: 121px;
+}
+.nav-item a{
+    border-bottom: 1px solid gray;
+}
+.navbar{
+    margin-top: -0.5rem;
+}
+.logo-name{
+    padding: 10px 0px ;
+}
+  }
+
+
+  
+  @media (max-width: 553px) {
+.navbar-toggler{
+    position: relative;
+    right: 20px;
+
+}
+.button-btn{
+    width: 121px;
+}
+.logo-name{
+    padding: 10px 0px ;
+}
+.nav-item a{
+    border-top: 1px solid gray;
+    
+}
+  .college-logo{
+    width: 70px;
+    height:70px ;
+}
+.navbar{
+    margin-top: -0.5rem;
+}
+.navbar-brand{
+    margin-left: 4rem;
+    margin-top: 6px;
+}
+
+  }
+@media (min-width: 992px) {
+
+    .navbar .dropdown:hover .dropdown-menu {
+      display: block;
+      width: 240px;
+    }
+    .college-logo:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow on hover */
+      }
+    .navbar .dropdown-toggle::after {
+        transform: translateX(3px);
+        transform: translateY(4px);
+    }
+    .navbar-brand{
+        position: relative;
+    }
+    .dropdown-menu{
+        background-color: #00000000;
+    }
+    .dropdown-item{
+        border-bottom: 0.01px solid green;
+    }
+  .border-item{
+    border-top: 3px solid green;
+
+  }
+  .navbar-nav{
+    width: 85vw;
+  }
+  .logo-name{
+    margin-left: 2.5rem;
+
+  }
+  .college-logo{
+    width:  60px;
+    height: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* For interactive effect */  
+}
+
+
+}
+
+

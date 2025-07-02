@@ -1,0 +1,36 @@
+
+.footer-icon{
+    display: flex;
+    margin-left: -16px;
+}
+
+.contact-text ul { 
+    list-style-type: none;
+    line-height: 35px;
+}
+.contact-text ul li i { 
+    margin-right: 9px;
+}
+.about-text{
+    color: #76767f;
+    font-size: 15px;
+}
+.footer-section-2 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section-2 ul li {
+    padding: 5px;
+}
+.caption{
+     background-color: #1a1a1f;
+    font-size: 13px;
+    color: #76767f;
+    text-align: center;
+}
+.caption span{
+    color: rgb(45, 222, 45);
+    font-weight: bold;
+}

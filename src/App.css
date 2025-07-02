@@ -1,0 +1,14 @@
+*{
+    word-wrap:break-word;
+    overflow-wrap:break-word
+}
+.app{
+    max-width: 1600px;
+    margin: auto;
+    background-color: white;
+}
+
+.navbar-show{
+    top: 0px;
+    z-index: 999;
+}

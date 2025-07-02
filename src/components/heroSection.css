@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ }
+
+.boxes img{
+  height: 70px;
+  width:  70px;
+  margin-left: -0.9em;
+  border-radius: 50%;
+}
+.box{
+  background-color:#00062b;
+  border-radius: 20px ;
+  border: 5px solid white;
+    position: relative;
+    z-index: 11; /* Higher than carousel overlay */  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.boxes h4{
+  font-weight: bold;
+  margin-top:8px ;
+
+}
+.hero-container{
+  margin-top: -2.6rem;
+}
+[data-aos="slide-box"] {
+  transform: translateY(50vh); 
+  opacity: 0;
+}
+[data-aos="slide-box"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+ /*old herosection css code
+
+[data-aos="slide-in-right"] {
+  transform: translateX(-100vw); 
+  opacity: 0;
+}
+
+[data-aos="slide-in-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+
+[data-aos="slide-in-top"] {
+  transform: translatey(100vw); 
+  opacity: 0;
+}
+
+[data-aos="slide-in-top"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+       .parent-container img{
+    height: 70px;
+    width:  70px;
+    border-radius: 50%;
+   }
+   .parent-container img,.parent-container p ,.parent-container h3{
+    margin-bottom: 18px;
+   }
+   .parent-container{
+    margin-bottom: 3rem;
+    
+   }
+   .parent-container p{
+    font-size: 13px;
+    padding-top: 1rem;
+
+   }
+   .parent-container img{
+margin-top: 1rem;
+   }
+.container-fluid{
+    position:relative;
+    top: -40px;
+}
+   .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2% !important;
+    border: none;
+  }
+    .col,.container{
+      border: none;
+
+    }
+    .parent-container{
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+      .card-child1{
+      background-color: #00062b;      
+    }
+    .card-child2{
+      background-color: #d09e13; 
+    }
+    .card-child3{
+      background-color: #98002e;
+      border: 8px solid white;
+ 
+
+    }
+    .card-child1,   .card-child2,   .card-child3{
+        border-radius: 10px 10px 10px 10px;
+
+    } */

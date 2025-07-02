@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Comic+Relief:wght@400;700&family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  background-image: url("https://gplucknow.co.in/public/user/assets/images/pattern/p4.png");
+}
+.nav1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  background-color: rgb(255, 94, 0);
+  height: 20vh;
+}
+ul .changeLinkColor,
+.bread1 a,
+.head-box p {
+  text-decoration: none;
+  color: white;
+}
+
+.section1 .head-box {
+  border: 2px solid red;
+  background-image: url("../assets/Admission Background.jpg");
+  background-color: grey;
+  height: 30vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.head-box .text {
+  font-size: 2rem;
+}
+.section2,
+.section3,
+.section4,
+.section5 {
+  /* height: 300px; */
+  margin: 5px auto;
+  width: 90%;
+}
+/* for border */
+/* .section2,
+.heading,
+.text-content {
+  border: 3px solid black;
+} */
+.heading,
+.text-content {
+  width: 70%;
+  margin: 2px 0 0 10px;
+}
+.section2 .contain {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.heading span {
+  font-weight: 400;
+}
+.heading .adm {
+  color: #001932 !important;
+}
+
+.text-content p,
+.content {
+  line-height: normal;
+  font-size: 16px;
+  text-align: justify;
+  color: #666666fa;
+}
+.contain .content {
+  width: 100%;
+}
+.orange,
+.heading span {
+  color: #e6a400;
+}
+
+.heading h6 {
+  background: #e6a400;
+  height: 0.5vh;
+  width: 4vw;
+}
+.table {
+  text-align: center;
+  font-size: 0.99rem;
+}
+.table thead th {
+  background-color: #001932 !important ;
+  color: white;
+  max-width: fit-content;
+}
+
+.list ul li {
+  list-style: outside none none;
+  color: #666666fa;
+  /* line-height: 4vh; */
+  font-size: 1rem;
+  font-weight: 500;
+}
+.list ul li::before {
+  content: "››  "; /* Right-pointing arrow */
+  margin-left: -2rem;
+}
+.footer {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 1rem;
+}
+.bread1 span {
+  color: #666464;
+  font-weight: 800;
+}
+
+.bread1 {
+  display: flex;
+}
+.image-content img {
+  margin-left: 2rem;
+  margin-right: -6rem;
+  width: 30vw;
+  height: auto;
+  border: 3px solid #e6a400;
+}
+.text-content {
+  margin-top: 2rem;
+}
+/* responsive */
+p #eng {
+  color: #001932;
+}

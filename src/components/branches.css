@@ -1,0 +1,144 @@
+
+.image{
+  background-image: url('assets/four.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
+@media screen and (max-width:991px) {
+  .image{
+    height: 400px;
+    width: 95%;
+    margin: auto;
+  }
+  .btn-group .btn{
+ padding: 14px 21px;
+
+  }
+}
+.line{
+  width: 55px;
+  height: 2px;
+  background-color: red;
+}
+.department-heading{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.dataHeading{
+  font-size: 31px;
+}
+.dataHeading span{
+  color: #009846;
+  font-weight: bolder;
+
+}
+g h3{
+  font-size: 48px;
+  font-weight: 600;
+}
+/* 
+.unique-color , .depart-color{
+  background-color: #c5224d;
+
+} */
+.btn-custom {
+    background-color: white;
+    border: 1px solid #37E015;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 6px 12px;
+    width: 120px;
+    transition: background-color 0.8s ease, color 0.4s ease;
+  }
+  .btn-custom .btn-text{
+    color: #37E015 ;
+  }
+  .btn-custom:hover {
+    background-color: green;
+    color: white;
+    font-weight: normal;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 370px; /* Increased from 200px */
+    width: 100%;
+
+  }
+
+/* Ghibli section css code is below until next comment or media query code  */
+.ghibli-image1{
+  height: auto;
+  box-shadow: -48px 48px 0px 0px rgb(230, 216, 216);
+}
+.padding1{
+  padding: 0px 48px 48px 48px;
+  margin-top: 2rem;
+
+}
+.ghibli-image1 img,.ghibli-image2 img{
+  border-radius: 7px;
+
+}
+.ghibli-image2{
+  margin-top:6rem;
+  height: auto;
+  box-shadow: -48px 48px 0px 0px rgb(230, 216, 216);
+  z-index: 5;
+}
+.ghibli-image2 {
+  position: relative;
+  display: inline-block;
+}
+
+
+.activities-heading{
+  font-size: 33px;
+  font-weight: bold;
+}
+
+    @media (max-width: 768px) {
+      .card-img-top {
+        height: 380px; /* Increased from 180px */
+      }
+      
+    }
+    
+   
+
+    @media (min-width: 320px) and (max-width:600px) {
+      .card-img-top{
+        height: 350px;
+
+      }
+      .card {
+        margin-left: 0.9rem;
+      }
+    }
+    @media (max-width: 319px) {
+      .card {
+        margin-left: 0.8rem;
+      }
+      .card-img-top{
+        height: 250px;
+      }
+    }
+    @media (min-width: 768px) {
+   .department-content p{
+    font-size: 12px;
+   }
+    }
+  .card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .card-body{
+    width: 100%;
+  }
+  .card p{
+    padding: 0px;
+    margin: 0px;
+  }
+  

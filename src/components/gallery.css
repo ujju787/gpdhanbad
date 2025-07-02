@@ -1,0 +1,81 @@
+.individual-gallery-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover
+{
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-content {
+  margin: 40px ;          /* Center horizontally with vertical spacing */
+  padding: 30px 25px;         /* Space inside container */
+  background: #f9f9f9;        /* Soft light background */
+  border-radius: 12px;        /* Rounded corners for smoothness */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;                /* Dark gray text for contrast */
+  line-height: 1.65;          /* Comfortable line spacing */
+  text-align: justify;        /* Justify text for neat edges */
+  border: 1px solid #ddd;     /* Light border for definition */
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-content:hover
+{
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #004085;             /* A deep blue for heading */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.gallery-content p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.8;
+  white-space: pre-line;     /* Preserve line breaks if any */
+}
+
+@media (max-width: 768px) {
+  .gallery-content {
+    padding: 20px 15px;
+    margin: 30px 15px;
+  }
+
+  .gallery-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .gallery-content p {
+    font-size: 1rem;
+  }
+}
+.gallery-item img{
+  height: 250px;
+  width: 320px;
+}

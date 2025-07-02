@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Coding/web development/Aeronspire"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projects",
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
