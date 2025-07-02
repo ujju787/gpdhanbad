@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 1500px; /* Create 3D depth for the card */
+        }
+
+        /* 3D Effect Container */
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+            max-width: 600px;
+            transform-style: preserve-3d;
+            transform: rotateX(0) rotateY(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .container:hover {
+            transform: rotateY(10deg) rotateX(10deg); /* 3D card hover effect */
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        /* Subheading Styling */
+        h2 {
+            font-size: 1.8rem;
+            color: #ffe5d9;
+            margin-top: 10px;
+            animation: fadeIn 3s ease;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+            animation: fadeInUp 2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff8a65;
+        }
+
+        /* Message Styling */
+        #wish-message {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: 600;
+            animation: fadeIn 3s ease;
+        }
+
+        /* Floating Balloons */
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background-color: #ff6f61;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            opacity: 0.8;
+            animation: float 5s ease-in-out infinite;
+            filter: blur(0.5px);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Balloon Float Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-200px) rotate(10deg);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(0) rotate(-10deg);
+                opacity: 0.8;
+            }
+        }
+
+        /* Blush Flowers Animation */
+        .blush-flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle, #ffafbd, #ff6f61);
+            border-radius: 50%;
+            animation: flowerFloat 4s ease-in-out infinite;
+            opacity: 0; /* Start with the flowers hidden */
+            pointer-events: none; /* Prevent interference with user actions */
+        }
+
+        @keyframes flowerFloat {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-150px) rotate(15deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) rotate(-15deg);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Happy Birthday, [Name]! 🎉</h1>
+            <h2>Let's make this day unforgettable!</h2>
+        </header>
+
+        <section class="interactive">
+            <!-- Button to trigger music and change message -->
+            <button onclick="playBirthdayMusic()">Start Birthday Celebration!</button>
+            <p id="wish-message">Hope this year brings you as much joy as you bring to others!</p>
+        </section>
+    </div>
+
+    <!-- Floating Balloons -->
+    <div class="balloon" style="background-color: #ff6f61; left: 10%; animation-duration: 5s;"></div>
+    <div class="balloon" style="background-color: #ff8a65; left: 30%; animation-duration: 6s;"></div>
+    <div class="balloon" style="background-color: #ffc3a0; left: 50%; animation-duration: 7s;"></div>
+    <div class="balloon" style="background-color: #ffafbd; left: 70%; animation-duration: 5.5s;"></div>
+    <div class="balloon" style="background-color: #ff9f80; left: 90%; animation-duration: 6.5s;"></div>
+
+    <!-- Blush Flowers (Added to the page but initially hidden) -->
+    <div class="blush-flower" style="top: 10%; left: 20%;"></div>
+    <div class="blush-flower" style="top: 30%; left: 40%;"></div>
+    <div class="blush-flower" style="top: 50%; left: 60%;"></div>
+    <div class="blush-flower" style="top: 70%; left: 80%;"></div>
+
+    <!-- Audio for Birthday Music -->
+    <audio id="birthdayMusic" src="birthday_music.mp3" preload="auto"></audio>
+
+    <script>
+        // Changing Birthday Wish Messages
+        const messages = [
+            "Wishing you a year filled with love and laughter!",
+            "May your special day be surrounded with joy!",
+            "Here's to an unforgettable year ahead!",
+            "Celebrate big today - you deserve it all!",
+            "Sending you good vibes for the best year yet!",
+            "Hope your day is filled with surprises and fun!"
+        ];
+
+        function changeMessage() {
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('wish-message').textContent = randomMessage;
+        }
+
+        // Play Music and Display Wishes
+        function playBirthdayMusic() {
+            // Start playing the music
+            document.getElementById('birthdayMusic').play();
+            
+            // Change the message after the music starts
+            document.getElementById('wish-message').textContent = "Wishing you an amazing year ahead! 🎉🎶";
+
+            // Create Blush Flowers animation (set opacity to 1 to show them)
+            const flowers = document.querySelectorAll('.blush-flower');
+            flowers.forEach((flower, index) => {
+                flower.style.opacity = "1";  // Make flowers visible
+                flower.style.animationDelay = `${index * 1}s`;  // Stagger flower appearance
+            });
+        }
+    </script>
+</body>
+</html>
